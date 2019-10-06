@@ -1,1 +1,132 @@
+.wrapper {
+  width: 1440px;
+}
 
+.header {
+  height: 88px;
+  background-color: #2e0952;
+}
+
+.main_welcoming {
+  height: 700px;
+  background-color: #8d69e2;
+}
+
+.main_products {
+  height: 1291px;
+  background-color: #2a8580;
+}
+
+.main_submit {
+  height: 900px;
+  background-color: #581212;
+}
+
+.main_repair {
+  height: 780px;
+  background-color: #08441a;
+}
+
+.main_measurer {
+  height: 910px;
+  background-color: #61800f;
+}
+
+.main_stylistic {
+  height: 1890px;
+  background-color: #916d21;
+}
+
+.main_goal {
+  height: 780px;
+  background-color: #6ac048;
+}
+
+.main_team {
+  height: 910px;
+  background-color: #c0488a;
+}
+
+.main_clients {
+  height: 1016px;
+  background-color: #a85cbb;
+}
+
+.main_map {
+  height: 954px;
+  background-color: #777477;
+}
+
+.footer {
+  height: 130px;
+  background-color: #db5757;
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+
+  .header {
+    height: 55px;
+    background-color: #2e0952;
+  }
+
+  .main_welcoming {
+    height: 476px;
+    background-color: #8d69e2;
+  }
+
+  .main_products {
+    height: 1091px;
+    background-color: #2a8580;
+  }
+
+  .main_submit {
+    height: 474px;
+    background-color: #581212;
+  }
+
+  .main_repair {
+    height: 1890px;
+    background-color: #08441a;
+  }
+
+  .main_measurer {
+    display: none;
+    height: 910px;
+    background-color: #61800f;
+  }
+
+  .main_stylistic {
+    height: 2170px;
+    background-color: #916d21;
+  }
+
+  .main_goal {
+    height: 780px;
+    background-color: #6ac048;
+    display: none;
+  }
+
+  .main_team {
+    height: 1690px;
+    background-color: #c0488a;
+  }
+
+  .main_clients {
+    display: none;
+    height: 1016px;
+    background-color: #a85cbb;
+  }
+
+  .main_map {
+    height: 840px;
+    background-color: #777477;
+  }
+
+  .footer {
+    height: 200px;
+    background-color: #db5757;
+  }
+}
