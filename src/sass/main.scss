@@ -1,0 +1,263 @@
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'abstracts/variables';
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@import 'layout/header.scss';
+
+.main_welcoming {
+  height: 707px;
+  display: flex;
+
+  &--sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 7%;
+    background-color: $base-background-color;
+    height: 100%;
+  }
+
+  &--link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'FuturaDemiC';
+    text-transform: uppercase;
+    color:  $text-gold;
+    transform: rotate(90deg);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 51px;
+      height: 1.5px;
+      background-color: $text-gold;  
+      margin-left: 93px;
+      margin-top: -10px;
+    }
+  }
+
+  &--promo {
+    width: 93%;
+    background: url(../images/promo-background.png) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+       
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 5;
+    }
+  }
+  
+  .application {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    &--destination {
+      margin-top: 27.4%;
+      margin-left: 4.4%;
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+      color: $text-white;
+      width: 550px;
+
+      & span {
+        color: $text-gold;
+      }
+    }
+
+    &--benefit {
+      margin-top: 2.7%;
+      margin-left: 4.4%;
+      font-family: "FuturaBookC";
+      font-size: 22px;
+      line-height: 30px;
+      color: $text-white;
+    }
+
+    &--accept {
+        margin-top: 5.8%;
+        margin-left: 4.4%;
+        width: 435px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calculate {
+      width: 207px;
+      height: 51px;
+      color: $text-white;
+      background-color: $text-gold;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+      border-radius: 2px;
+      font-family: "FuturaDemiC";
+      border: none;
+    }
+
+    .submit {
+      width: 207px;
+      height: 51px;
+      color: $text-white;
+      background-color: rgba(227, 184, 115, 0);
+      border: 1px solid #FFFFFF;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 2px;
+      font-family: "FuturaDemiC";
+    }
+  }
+}
+
+
+
+.main_products {
+    height: 1291px;
+    background-color: rgb(42, 133, 128);
+}
+
+.main_submit {
+    height: 900px;
+    background-color: rgb(88, 18, 18);
+}
+
+.main_repair {
+    height: 780px;
+    background-color: rgb(8, 68, 26);
+}
+
+.main_measurer {
+    height: 910px;
+    background-color: rgb(97, 128, 15);
+}
+
+.main_stylistic {
+    height: 1890px;
+    background-color: rgb(145, 109, 33);
+}
+
+.main_goal {
+    height: 780px;
+    background-color: rgb(106, 192, 72);
+}
+
+.main_team {
+    height: 910px;
+    background-color: rgb(192, 72, 138);
+}
+
+.main_clients {
+    height: 1016px;
+    background-color: rgb(168, 92, 187);
+}
+
+.main_map {
+    height: 954px;
+    background-color: rgb(119, 116, 119);
+}
+
+.footer {
+    height: 130px;
+    background-color: rgb(219, 87, 87);
+}
+
+
+@media (max-width: 375px) {
+    .wrapper {
+        width: 375px;
+    }
+    
+    .header {
+        height: 55px;
+        background-color: rgb(46, 9, 82);
+    }
+    
+    .main_welcoming {
+        height: 476px;
+        background-color: rgb(141, 105, 226);
+    }
+    
+    .main_products {
+        height: 1091px;
+        background-color: rgb(42, 133, 128);
+    }
+    
+    .main_submit {
+        height: 474px;
+        background-color: rgb(88, 18, 18);
+    }
+    
+    .main_repair {
+        height: 1890px;
+        background-color: rgb(8, 68, 26);
+    }
+    
+    .main_measurer {
+        display: none;
+        height: 910px;
+        background-color: rgb(97, 128, 15);
+    }
+    
+    .main_stylistic {
+        height: 2170px;
+        background-color: rgb(145, 109, 33);
+
+    }
+    
+    .main_goal {
+        height: 780px;
+        background-color: rgb(106, 192, 72);
+        display: none;
+    }
+    
+    .main_team {
+        height: 1690px;
+        background-color: rgb(192, 72, 138);
+
+    }
+    
+    .main_clients {
+        display: none;
+        height: 1016px;
+        background-color: rgb(168, 92, 187);
+    }
+    
+    .main_map {
+        height: 840px;
+        background-color: rgb(119, 116, 119);
+    }
+    
+    .footer {
+        height: 200px;
+        background-color: rgb(219, 87, 87);
+    }
+
+}
+
+
+
+
+
