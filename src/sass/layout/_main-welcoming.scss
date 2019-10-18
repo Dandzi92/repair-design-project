@@ -1,0 +1,150 @@
+.main_welcoming {
+    height: 707px;
+    display: flex;
+    position: relative;
+  
+    &--sidebar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 7%;
+      background-color: $base-background-color;
+      height: 100%;
+    }
+  
+    &--link {
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'FuturaDemiC';
+      text-transform: uppercase;
+      color:  $text-gold;
+      transform: rotate(90deg);
+  
+      &::after {
+        content: "";
+        display: block;
+        width: 51px;
+        height: 1.5px;
+        background-color: $text-gold;  
+        margin-left: 93px;
+        margin-top: -10px;
+      }
+    }
+  
+    &--promo {
+      width: 93%;
+      background: url(../images/promo-background.png) no-repeat 50% 50%;
+      background-size: cover;
+      height: 100%;
+      position: relative;
+         
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 5;
+      }
+    }
+    
+    .application {
+      position: relative;
+      z-index: 10;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+  
+      &--destination {
+        margin-top: 27.4%;
+        margin-left: 4.4%;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: $text-white;
+        width: 550px;
+  
+        span {
+          color: $text-gold;
+        }
+      }
+  
+      &--benefit {
+        margin-top: 2.7%;
+        margin-left: 4.4%;
+        font-family: "FuturaBookC";
+        font-size: 22px;
+        line-height: 30px;
+        color: $text-white;
+      }
+  
+      &--accept {
+          margin-top: 5.8%;
+          margin-left: 4.4%;
+          width: 435px;
+          display: flex;
+          justify-content: space-between;
+      }
+  
+      .calculate {
+        width: 207px;
+        height: 51px;
+        color: $text-white;
+        background-color: $text-gold;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        font-family: "FuturaDemiC";
+        border: none;
+        cursor: pointer;
+      }
+  
+      .submit {
+        width: 207px;
+        height: 51px;
+        color: $text-white;
+        background-color: rgba(227, 184, 115, 0);
+        border: 1px solid #FFFFFF;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 2px;
+        font-family: "FuturaDemiC";
+        cursor: pointer;
+      }
+    }
+  
+    .scroll {
+      position: absolute;
+      top: 93%;
+      z-index: 10;
+      width: 247px;
+      height: 97px;
+      display: flex;
+      background-color: #131313;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      span {
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $text-white
+      }
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
