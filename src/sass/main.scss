@@ -5,16 +5,73 @@
 @import 'layout/header';
 @import 'layout/main-welcoming';
 @import 'layout/main-products';
+@import 'layout/main_submit';
 
-
-.main_submit {
-    height: 650px;
-    background-color: $text-white;
-}
 
 .main_repair {
     height: 780px;
-    background-color: rgb(8, 68, 26);
+    background-color: $text-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--chapter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &--title {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #181818;
+    }
+    .set {
+      display: flex;
+      width: 1236px;
+      margin-top: 3%;
+      justify-content: space-between;
+      &--item_description {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        width: 330px;
+        height: 286px;
+        padding: 25px;
+      }
+      &--title {
+        margin: 0;
+        font-family: "Yeseva One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #363636;
+      }
+      &--services_list {
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 25px;
+        color: #959595;
+      }
+      &--item_price {
+        width: 228px;
+        height: 54px;
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
 }
 
 .main_measurer {
