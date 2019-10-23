@@ -1,0 +1,230 @@
+.main_measurer {
+  height: 1210px;
+  background-color: $text-white;
+  display: flex;
+  justify-content: space-between;
+
+  &--discount {
+    display: flex;
+    margin-top: 3%;
+    margin-right: 10%;
+    p {
+      font-family: "FuturaDemiC";
+      font-size: 20px;
+      line-height: 25px;
+      color: #e3b873;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+      width: 250px;
+    }
+  }
+
+  .benefits_item {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    &--circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e3b873;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+    }
+    &--text {
+      font-family: "FuturaMediumC";
+      font-size: 18px;
+      line-height: 21px;
+      color: #363636;
+      margin-left: 2%;
+      width: 364px;
+    }
+  }
+
+  &--benefits {
+    background: url(./../images/eclipse-background.png) no-repeat;
+    margin-top: 10%;
+    position: relative;
+    width: 50%;
+    &-first {
+      top: 9%;
+      left: 48%;
+    }
+    &-second {
+      top: 20%;
+      left: 62%;
+    }
+    &-third {
+      top: 35%;
+      left: 67%;
+    }
+    &-fourth {
+      top: 49%;
+      left: 58.7%;
+      & .benefits_item--text {
+        width: 230px;
+      }
+    }
+  }
+  &--form_discount {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18%;
+  }
+
+  .consumer_form {
+    width: 506px;
+    height: 509px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-left: 7%;
+    &--title {
+      font-family: "FuturaDemiC";
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      width: 230px;
+      margin-top: 28px;
+    }
+    &--consumer_data {
+      margin-top: 39px;
+    }
+    &--label {
+      font-family: "FuturaBookC";
+      font-size: 15px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &--input {
+      background: rgba(255, 255, 255, 0);
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      font-family: "FuturaMediumC";
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+    }
+    &--name {
+      display: flex;
+      flex-direction: column;
+      width: 408px;
+      height: 50px;
+    }
+    &--phone {
+      display: flex;
+      flex-direction: column;
+      width: 408px;
+      margin-top: 48px;
+      height: 50px;
+    }
+    &--email {
+      display: flex;
+      flex-direction: column;
+      width: 408px;
+      height: 50px;
+      margin-top: 48px;
+    }
+    &--checkbox {
+      margin-top: 16px;
+      label {
+        font-family: "FuturaBookC";
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .consumer_form--checkmark {
+          position: absolute;
+          top: 0;
+          left: 7px;
+          height: 18px;
+          width: 18px;
+          background-color: #ccc;
+          border-radius: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+        }
+        & input:checked ~ .consumer_form--checkmark {
+          background: #e3b873;
+        }
+        & input:checked ~ .consumer_form--checkmark:after {
+          display: block;
+        }
+        & .consumer_form--checkmark:after {
+          left: 6px;
+          top: 1px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &--submit {
+      margin-top: 39px;
+      display: flex;
+      justify-content: flex-end;
+      input {
+        background: #e3b873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+        width: 200px;
+        height: 51px;
+        font-family: "FuturaDemiC";
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+  .ellipse {
+    position: absolute;
+    z-index: 1;
+    top: 53px;
+    right: 203px;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #e3b873 100%)
+        border-box;
+    border: 3px solid transparent;
+  }
+}

@@ -1,0 +1,121 @@
+.main_customers {
+  height: 1620px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    margin-top: 45%;
+  }
+  &--title {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+  }
+  &--icon {
+    margin-top: 10%;
+  }
+  &--description {
+    font-family: "FuturaBookC";
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #363636;
+    margin-top: 2%;
+    width: 380px;
+  }
+  &--feedbacks {
+    margin-top: 3%;
+    width: 1236px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feedback_item {
+    width: 376px;
+    height: 455px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 10px 50px;
+    padding: 2%;
+    position: relative;
+    &--content {
+      font-family: FuturaBookC;
+      font-size: 15px;
+      line-height: 180%;
+      color: rgb(149, 149, 149);
+      margin-top: 5%;
+      width: 332px;
+    }
+  }
+
+  .customer_data {
+    display: flex;
+    &--photo {
+      border-radius: 50%;
+    }
+    &--name {
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      color: rgb(24, 24, 24);
+      width: 178px;
+      margin-left: 4%;
+      margin-top: 4%;
+    }
+  }
+  .customer_area {
+    width: 146px;
+    height: 54px;
+    background: rgb(227, 184, 115);
+    box-shadow: rgba(227, 184, 115, 0.5) 5px 5px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 94%;
+    left: 0px;
+    &--content {
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .customer_duration {
+    width: 148px;
+    height: 54px;
+    background: rgb(227, 184, 115);
+    box-shadow: rgba(227, 184, 115, 0.5) 5px 5px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 94%;
+    left: 39.1%;
+    &--content {
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+  }
+}

@@ -1,133 +1,139 @@
 .main_products {
-    position: relative;
-    height: 1074px;
-    background-color: $base-background-color;
-    .portfolio_projects {
+  position: relative;
+  height: 1074px;
+  background-color: $base-background-color;
+  .portfolio_projects {
+    display: flex;
+    height: 750px;
+  }
+  .description {
+    margin-top: 176px;
+    margin-left: 7%;
+    width: 441px;
+    height: 511px;
+    display: flex;
+    flex-direction: column;
+    &--container {
       display: flex;
-      height: 750px;
     }
-    .description {
-      margin-top: 176px;
-      margin-left: 7%;
-      width: 441px;
-      height: 511px;
-      display: flex;
-      flex-direction: column;
-      &--container {
-        display: flex;
+    &--title {
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 37px;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+      color: $text-gold;
+      width: 255px;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 92px;
+        height: 1px;
+        background-color: $text-gold;
+        margin-bottom: 9px;
+        margin-left: 38px;
       }
-      &--title {
+    }
+    &--story {
+      font-family: "FuturaBookC";
+      font-size: 18px;
+      line-height: 29px;
+      color: $text-white;
+      width: 441px;
+    }
+  }
+  .parameters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &--item {
+      flex-basis: 50%;
+      span {
         font-family: "Yeseva One";
         font-style: normal;
         font-weight: normal;
-        font-size: 27px;
-        line-height: 37px;
-        letter-spacing: -0.07em;
-        text-transform: uppercase;
-        color: $text-gold; 
-        width: 160px;
-      }
-      &--decorator {
-          margin-top: 35px;
-      }
-      &--story {
-        font-family: "FuturaBookC";
         font-size: 18px;
-        line-height: 29px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $text-gold;
+      }
+      p {
+        font-family: "FuturaBookC";
+        font-size: 15px;
+        line-height: 20px;
         color: $text-white;
-        width: 441px;
       }
-      }
-      .parameters {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between; 
-          &--item {
-            flex-basis: 50%;
-            span {
-              font-family: "Yeseva One";
-              font-style: normal;
-              font-weight: normal;
-              font-size: 18px;
-              line-height: 25px;
-              text-transform: uppercase;
-              color: $text-gold;
-            }
-            p {
-              font-family: "FuturaBookC";
-              font-size: 15px;
-              line-height: 20px;
-              color: $text-white;
-            }
-          }   
-      }
-  
-      .pagination {
-          display: flex;
-          margin-top: 20%;
-          width: 206px;
-          justify-content: space-between;
-      }
-      
-      .demonstration {
-          margin-left: 3.4%;
-          &--navbar {
-            margin-top: 12.7%;
-            width: 623px;
-          }
-          
-          &--slides {
-            margin-top: 9%;  
-            width: 850px;
-            overflow: hidden;
-            display: flex;
-            .first_slide {
-              margin-right: 21px;
-            }
-          }
-          &--links {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-          }
-         
-          &--link {
-            font-family: "Yeseva One";
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 19px;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.3);
-            text-decoration: none;
-            &-chosen {
-            color: $text-gold;
-            text-decoration: underline;
-            }
-          }          
-      }
-  
-      .chapter {
-        display: flex;
-        width: 196px;
-        height: 67px;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-  
-        &--title {
-          font-family: "Yeseva One";
-          font-size: 20px;
-          line-height: 27.72px; 
-          color: $text-white;
-          text-transform: uppercase;
-        }
-      }
-      .video {
-        position: absolute;
-        left: 23%;
-        top: 82%;
-      }
+    }
   }
+
+  .pagination {
+    display: flex;
+    margin-top: 20%;
+    width: 206px;
+    justify-content: space-between;
+  }
+
+  .demonstration {
+    margin-left: 3.4%;
+    &--navbar {
+      margin-top: 12.7%;
+      width: 623px;
+    }
+
+    &--slides {
+      margin-top: 9%;
+      width: 850px;
+      overflow: hidden;
+      display: flex;
+      .first_slide {
+        margin-right: 21px;
+      }
+    }
+    &--links {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &--link {
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+      &-chosen {
+        color: $text-gold;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .chapter {
+    display: flex;
+    width: 196px;
+    height: 67px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    &--title {
+      font-family: "Yeseva One";
+      font-size: 20px;
+      line-height: 27.72px;
+      color: $text-white;
+      text-transform: uppercase;
+    }
+  }
+  .video {
+    position: absolute;
+    left: 23%;
+    top: 82%;
+  }
+}

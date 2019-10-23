@@ -1,69 +1,70 @@
 .header {
-    height: 83px;
-    display: flex;
-    background-color: $base-background-color;
-  }
-  
-  .logo {
-    font-family: "FuturaDemiC";
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $text-gold;
-    margin-left: 7%;
-    margin-top: 37px;
-  }
-  
-  .navigation {
-    width: 582px;
-    margin-top: 37px;
-    margin-left: 7%;
-    
-    &--link {
-      font-family: "FuturaBookC";
-      font-size: 14px;
-      line-height: 16px;
-      text-transform: uppercase;
-      color: $text-white;
-      text-decoration: none;
-    }
+  height: 83px;
+  display: flex;
+  background-color: $base-background-color;
+}
 
-    &-gold {
-      color: $text-gold;
-    }
-      
-      &--links {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-  }
-  
-  .phone_number {
-    margin-left: 4.6%;
-    margin-top: 37px;
-    color: $text-gold;
-    font-family: "FuturaDemiC";
+.logo {
+  font-family: "FuturaDemiC";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $text-gold;
+  margin-left: 7%;
+  margin-top: 37px;
+}
+
+.navigation {
+  width: 582px;
+  margin-top: 37px;
+  margin-left: 7%;
+
+  &--link {
+    font-family: "FuturaBookC";
     font-size: 14px;
     line-height: 16px;
-  }
-  
-  .phone_me {
-    margin-left: 3%;
-    height: 37px;
-    width: 161px;
-    color: $text-white;
-    background-color: $text-gold;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
     text-transform: uppercase;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    font-family: "FuturaDemiC";
-    border: none;
-    align-self: center;
-    cursor: pointer;
+    color: $text-white;
+    text-decoration: none;
   }
+
+  &-gold {
+    color: $text-gold;
+  }
+
+  &--links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.phone_number {
+  margin-left: 4.6%;
+  margin-top: 37px;
+  color: $text-gold;
+  font-family: "FuturaDemiC";
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone_me {
+  margin-left: 3%;
+  height: 37px;
+  width: 161px;
+  color: $text-white;
+  background-color: $text-gold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  font-family: "FuturaDemiC";
+  border: none;
+  align-self: center;
+  cursor: pointer;
+}
+

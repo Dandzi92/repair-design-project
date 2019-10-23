@@ -1,0 +1,92 @@
+.main_design_project {
+  height: 620px;
+  background-color: $text-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--chapter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  &--icon {
+    margin-top: 7%;
+  }
+
+  &--title {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+  }
+
+  &--description {
+    font-family: "FuturaBookC";
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #363636;
+    width: 763px;
+    margin-top: 2%;
+  }
+
+  .gallery {
+    display: flex;
+    width: 1236px;
+    margin-top: 3%;
+    justify-content: space-between;
+    &--item_description {
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+      width: 330px;
+      padding: 25px;
+      position: relative;
+      bottom: 18%;
+      left: 8%;
+      z-index: 1;
+      background-color: $text-white;
+    }
+    &--title {
+      margin: 0;
+      font-family: "Yeseva One";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #363636;
+      padding-left: 8%;
+    }
+    &--services_list {
+      font-family: "FuturaBookC";
+      font-size: 15px;
+      line-height: 25px;
+      color: #959595;
+      margin-bottom: 45px;
+    }
+    &--item_price {
+      width: 228px;
+      height: 54px;
+      background: #e3b873;
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 22%;
+      z-index: 2;
+      left: 8%;
+    }
+  }
+}
