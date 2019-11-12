@@ -16,8 +16,8 @@
     font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-align: center;
     text-transform: uppercase;
     color: #181818;
@@ -43,9 +43,6 @@
       width: 330px;
       height: 286px;
       padding: 25px;
-      // position: relative;
-      // bottom: 18%;
-      // left: 8%;
       position: absolute;
       left: 8%;
       bottom: 6%;
@@ -57,15 +54,15 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 1.125rem;
+      line-height: 1.563rem;
       color: #363636;
       padding-left: 8%;
     }
     &--services_list {
       font-family: "FuturaBookC";
-      font-size: 15px;
-      line-height: 25px;
+      font-size: 0.9375rem;
+      line-height:  1.563rem;
       color: #959595;
     }
     &--item_price {
@@ -76,16 +73,13 @@
       font-family: Yeseva One;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 1.125rem;
+      line-height:  1.563rem;
       text-transform: uppercase;
       color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      // position: relative;
-      // bottom: 22%;
-      // left: 8%;
       position: absolute;
       bottom: 2%;
       left: 8%;

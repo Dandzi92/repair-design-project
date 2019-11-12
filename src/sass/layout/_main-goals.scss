@@ -3,7 +3,7 @@
     display: none;
   }
 
-   margin-top: 5%;
+  margin-top: 5%;
   height: 1200px;
   background-color: $base-background-color;
   display: flex;
@@ -13,8 +13,8 @@
     margin-left: 4%;
     &--title {
       font-family: "FuturaDemiC";
-      font-size: 15px;
-      line-height: 21px;
+      font-size: 0.9375rem;
+      line-height: 1.313rem;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
     }
@@ -25,8 +25,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 27px;
-      line-height: 37px;
+      font-size:  1.688rem;
+      line-height: 2.313rem;
       text-transform: uppercase;
       color: rgb(227, 184, 115);
       width: 320px;
@@ -45,8 +45,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
+      font-size:  1.125rem;
+      line-height: 1.563rem;
       text-transform: uppercase;
       color: rgb(255, 255, 255);
     }
@@ -56,16 +56,16 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 1.125rem;
+      line-height: 1.563rem;
       text-transform: uppercase;
       color: rgb(227, 184, 115);
     }
     &--goal_intro {
       margin-top: 5%;
       font-family: "FuturaBookC";
-      font-size: 15px;
-      line-height: 25px;
+      font-size: 0.9375rem;
+      line-height: 1.563rem;
       color: rgb(255, 255, 255);
     }
     .pagination {
@@ -105,8 +105,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 15px;
-      line-height: 21px;
+      font-size:  0.9375rem;
+      line-height: 1.313rem;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.4);
       &:after {
@@ -120,8 +120,8 @@
 
     &--item_name {
       font-family: "FuturaBookC";
-      font-size: 15px;
-      line-height: 18px;
+      font-size: 0.9375rem;
+      line-height: 1.125rem;
       color: rgba(255, 255, 255, 0.4);
     }
 

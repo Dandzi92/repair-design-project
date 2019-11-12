@@ -49,8 +49,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 27px;
-      line-height: 37px;
+      font-size:  1.688rem;
+      line-height: 2.313rem;
       letter-spacing: -0.07em;
       text-transform: uppercase;
       color: $text-gold;
@@ -73,8 +73,8 @@
         text-align: center;
     }
       font-family: "FuturaBookC";
-      font-size: 18px;
-      line-height: 29px;
+      font-size:  1.125rem;
+      line-height: 1.813rem;
       color: $text-white;
       width: 441px;
     }
@@ -94,15 +94,15 @@
         font-family: "Yeseva One";
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 1.125rem;
+        line-height:  1.563rem;
         text-transform: uppercase;
         color: $text-gold;
       }
       p {
         font-family: "FuturaBookC";
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
         color: $text-white;
       }
     }
@@ -166,8 +166,8 @@
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 19px;
+      font-size: 0.875rem;
+      line-height: 1.188rem;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.3);
       text-decoration: none;
@@ -180,8 +180,7 @@
 
   .chapter {
     @media (max-width: 1355px) {
-      height: auto;
-      margin-top: 15%;
+      margin-top: 10%;
     }
     display: flex;
     width: 196px;
@@ -192,16 +191,17 @@
 
     &--title {
       font-family: "Yeseva One";
-      font-size: 20px;
-      line-height: 27.72px;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
       color: $text-white;
       text-transform: uppercase;
     }
   }
   .video {
     @media (max-width: 1355px) {
-    max-width: 85%;
+     width: 85%;
      position: static;
+     margin-bottom: 5%;
     }
     position: absolute;
     left: 23%;
