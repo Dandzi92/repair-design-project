@@ -1,10 +1,18 @@
 .header {
+  @media (max-width: 1355px) {
+    justify-content: space-between;
+    height: 52px;
+    align-items: center;
+  }
   height: 83px;
   display: flex;
   background-color: $base-background-color;
 }
 
 .logo {
+  @media (max-width: 1355px) {
+    margin-top: 0;
+  }
   font-family: "FuturaDemiC";
   font-size: 14px;
   line-height: 16px;
@@ -15,6 +23,9 @@
 }
 
 .navigation {
+  @media (max-width: 1355px) {
+    display: none;
+  }
   width: 582px;
   margin-top: 37px;
   margin-left: 7%;
@@ -42,6 +53,12 @@
 }
 
 .phone_number {
+  @media (max-width: 1355px) {
+    margin-top: 0;
+    color: $text-white;
+    text-decoration: none;
+    margin-right: 3%;
+  }
   margin-left: 4.6%;
   margin-top: 37px;
   color: $text-gold;
@@ -51,6 +68,9 @@
 }
 
 .phone_me {
+  @media (max-width: 1355px) {
+    display: none;
+  }
   margin-left: 3%;
   height: 37px;
   width: 161px;
@@ -67,4 +87,3 @@
   align-self: center;
   cursor: pointer;
 }
-

@@ -1,4 +1,7 @@
 .main_measurer {
+  @media (max-width: 1355px) {
+    display: none;
+  }
   height: 1210px;
   background-color: $text-white;
   display: flex;

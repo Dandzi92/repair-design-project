@@ -1,4 +1,7 @@
 .main_repair {
+  @media (max-width: 1355px) {
+    height: auto;
+  }
   height: 780px;
   background-color: $text-white;
   display: flex;
@@ -20,18 +23,32 @@
     color: #181818;
   }
   .set {
+    
+    @media (max-width: 1355px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 90%;
+    }
+
     display: flex;
     width: 1236px;
     margin-top: 3%;
     justify-content: space-between;
+    &--item {
+      height: 608px;
+      position: relative;
+    }
     &--item_description {
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
       width: 330px;
       height: 286px;
       padding: 25px;
-      position: relative;
-      bottom: 18%;
+      // position: relative;
+      // bottom: 18%;
+      // left: 8%;
+      position: absolute;
       left: 8%;
+      bottom: 6%;
       z-index: 1;
       background-color: $text-white;
     }
@@ -66,10 +83,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-      bottom: 22%;
-      z-index: 2;
+      // position: relative;
+      // bottom: 22%;
+      // left: 8%;
+      position: absolute;
+      bottom: 2%;
       left: 8%;
+      z-index: 2;
     }
   }
 }

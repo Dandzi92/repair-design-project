@@ -1,12 +1,31 @@
 .main_products {
+  @media (max-width: 1355px) {
+    height: 1550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
   position: relative;
   height: 1074px;
   background-color: $base-background-color;
   .portfolio_projects {
+    @media (max-width: 1355px) {
+     flex-direction: column;
+     height: auto;
+     position: relative;
+    }
     display: flex;
     height: 750px;
   }
   .description {
+    @media (max-width: 1355px) {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      height: auto;
+      align-items: center;
+    }
     margin-top: 176px;
     margin-left: 7%;
     width: 441px;
@@ -14,9 +33,19 @@
     display: flex;
     flex-direction: column;
     &--container {
+      @media (max-width: 1355px) {
+        justify-content: center;
+        &--title::after {
+          display: none;
+        }
+      }
       display: flex;
     }
     &--title {
+      @media (max-width: 1355px) {
+       text-align: center;
+       margin-bottom: 1%;
+      }
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
@@ -27,6 +56,9 @@
       color: $text-gold;
       width: 255px;
       &::after {
+        @media (max-width: 1355px) {
+            display: none;
+        }
         content: "";
         display: inline-block;
         width: 92px;
@@ -37,6 +69,9 @@
       }
     }
     &--story {
+      @media (max-width: 1355px) {
+        text-align: center;
+    }
       font-family: "FuturaBookC";
       font-size: 18px;
       line-height: 29px;
@@ -45,6 +80,11 @@
     }
   }
   .parameters {
+    @media (max-width: 1355px) {
+      position: absolute;
+      top: 105%;
+    left: 0;
+  }
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -69,6 +109,9 @@
   }
 
   .pagination {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     display: flex;
     margin-top: 20%;
     width: 206px;
@@ -76,19 +119,39 @@
   }
 
   .demonstration {
+    @media (max-width: 1355px) {
+      margin-left: 0;
+      margin-top: 4%;
+    }
     margin-left: 3.4%;
     &--navbar {
+      @media (max-width: 1355px) {
+        display: none;
+      }
       margin-top: 12.7%;
       width: 623px;
     }
 
     &--slides {
+      @media (max-width: 1355px) {
+        width: 100%;
+        margin-top: 0;
+      }
       margin-top: 9%;
       width: 850px;
       overflow: hidden;
       display: flex;
       .first_slide {
+        @media (max-width: 1355px) {
+          display: none;
+        }
         margin-right: 21px;
+      }
+      .second_slide {
+        @media (max-width: 1355px) {
+         
+          width: 100%;
+        }
       }
     }
     &--links {
@@ -116,6 +179,10 @@
   }
 
   .chapter {
+    @media (max-width: 1355px) {
+      height: auto;
+      margin-top: 15%;
+    }
     display: flex;
     width: 196px;
     height: 67px;
@@ -132,6 +199,9 @@
     }
   }
   .video {
+    @media (max-width: 1355px) {
+     position: static;
+    }
     position: absolute;
     left: 23%;
     top: 82%;

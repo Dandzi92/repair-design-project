@@ -1,9 +1,15 @@
 .main_welcoming {
+  @media (max-width: 1355px) {
+   height: 476px;
+  }
   height: 707px;
   display: flex;
   position: relative;
 
   &--sidebar {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +38,9 @@
   }
 
   &--promo {
+    @media (max-width: 1355px) {
+      width: 100%;
+    }
     width: 93%;
     background: url(../images/promo-background.png) no-repeat 50% 50%;
     background-size: cover;
@@ -51,6 +60,11 @@
   }
 
   .application {
+    @media (max-width: 1355px) {
+      width: 100%;
+      align-items: center;
+      height: 100%;
+    }
     position: relative;
     z-index: 10;
     width: 50%;
@@ -58,6 +72,10 @@
     flex-direction: column;
 
     &--destination {
+      @media (max-width: 1355px) {
+        margin-top: 6%;
+        margin-left: 0;
+      }
       margin-top: 27.4%;
       margin-left: 4.4%;
       font-family: "Yeseva One";
@@ -75,6 +93,10 @@
     }
 
     &--benefit {
+      @media (max-width: 1355px) {
+        margin-top: 0;
+        margin-left: 0;
+      }
       margin-top: 2.7%;
       margin-left: 4.4%;
       font-family: "FuturaBookC";
@@ -84,6 +106,14 @@
     }
 
     &--accept {
+      @media (max-width: 1355px) {
+        height: 130px;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+      }
       margin-top: 5.8%;
       margin-left: 4.4%;
       width: 435px;
@@ -124,6 +154,9 @@
   }
 
   .scroll {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     position: absolute;
     top: 93%;
     z-index: 10;
