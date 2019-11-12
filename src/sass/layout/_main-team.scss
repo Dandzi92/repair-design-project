@@ -1,4 +1,7 @@
 .main_team {
+  @media (max-width: 1355px) {
+    height: auto;
+  }
   height: 389px;
   background-color: $base-background-color;
   display: flex;
@@ -33,11 +36,19 @@
     width: 450px;
   }
   &--employees {
+    @media (max-width: 1355px) {
+      width: 85%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     display: flex;
     margin-top: 5%;
   }
 
   .employees_item {
+    @media (max-width: 1355px) {
+      margin-bottom: 17%;
+    }
     display: flex;
     flex-direction: column;
     width: 356px;
@@ -99,6 +110,9 @@
   }
 
   .employees_description {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     margin-top: 9%;
     font-family: FuturaBookC;
     font-size: 20px;

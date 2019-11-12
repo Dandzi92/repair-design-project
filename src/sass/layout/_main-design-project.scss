@@ -1,4 +1,13 @@
 .main_design_project {
+  .services_desktop {
+    @media (max-width: 1355px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1355px) {
+    height: auto;
+    background-color: $base-background-color;
+  }
   height: 620px;
   background-color: $text-white;
   display: flex;
@@ -16,6 +25,9 @@
   }
 
   &--title {
+    @media (max-width: 1355px) {
+      color: $text-white;
+    }
     font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
@@ -27,6 +39,9 @@
   }
 
   &--description {
+    @media (max-width: 1355px) {
+      color: $text-white;
+    }
     font-family: "FuturaBookC";
     font-size: 20px;
     line-height: 27px;
@@ -37,16 +52,34 @@
   }
 
   .gallery {
+    @media (max-width: 1355px) {
+      width: 90%;
+      margin-top: 3%;
+      justify-content: space-around;
+      /* justify-content: space-between; */
+      height: auto;
+      flex-wrap: wrap;
+    }
     display: flex;
     width: 1236px;
     margin-top: 3%;
     justify-content: space-between;
+    &--item {
+      @media (max-width: 1355px) {
+       height: 650px;
+      }
+      position: relative;
+    }
     &--item_description {
+      @media (max-width: 1355px) {
+        top: 43%;
+        left: 0;
+      }
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
       width: 330px;
       padding: 25px;
-      position: relative;
-      bottom: 18%;
+      position: absolute;
+      top: 67%;
       left: 8%;
       z-index: 1;
       background-color: $text-white;
@@ -69,6 +102,10 @@
       margin-bottom: 45px;
     }
     &--item_price {
+      @media (max-width: 1355px) {
+        top: 73%;
+        left: 0;
+      }
       width: 228px;
       height: 54px;
       background: #e3b873;
@@ -83,10 +120,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-      bottom: 22%;
+      position: absolute;
+      top: 115%;
       z-index: 2;
       left: 8%;
+      &-not_mini {
+        top: 133%;
+        @media (max-width: 1355px) {
+          top: 86%;
+        }
+      }
+      &-full {
+        top: 163%;
+        @media (max-width: 1355px) {
+          top: 86%;
+        }
+      }
     }
   }
 }

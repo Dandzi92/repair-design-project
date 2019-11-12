@@ -1,4 +1,7 @@
 .footer {
+  @media (max-width: 1355px) {
+    display: none;
+  }
     height: 83px;
     background-color: $base-background-color;
     display: flex;

@@ -1,9 +1,31 @@
 .main_stylistic {
+  .main_stylistic--swiper {
+    display: none;
+    @media (max-width: 1355px) {
+      display: block;
+      width: 80%;
+      margin-top: 5%;
+      .swiper_image {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1355px) {
+    height: auto;
+    background: $text-white;
+    flex-direction: column;
+    align-items: center;
+  }
+
   height: 864px;
   background: url(./../images/Stylistic-Background.png) no-repeat;
   position: relative;
   display: flex;
   &::before {
+    @media (max-width: 1355px) {
+      display: none;
+  }
     content: "";
     position: absolute;
     top: 0;
@@ -14,6 +36,9 @@
     z-index: 5;
   }
   &--styles_variety {
+    @media (max-width: 1355px) {
+      margin-top: 5%;
+  }
     position: relative;
     z-index: 10;
     display: flex;
@@ -24,6 +49,9 @@
   }
 
   &--gallery {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     position: relative;
     z-index: 10;
     display: flex;
@@ -55,6 +83,9 @@
   }
 
   &--manner {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     font-family: "Proxima Nova";
     font-size: 20px;
     line-height: 34px;

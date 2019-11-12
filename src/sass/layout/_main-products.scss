@@ -200,6 +200,7 @@
   }
   .video {
     @media (max-width: 1355px) {
+    max-width: 85%;
      position: static;
     }
     position: absolute;

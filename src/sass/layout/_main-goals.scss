@@ -1,4 +1,9 @@
 .main_goals {
+  @media (max-width: 1355px) {
+    display: none;
+  }
+
+   margin-top: 5%;
   height: 1200px;
   background-color: $base-background-color;
   display: flex;

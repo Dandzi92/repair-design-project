@@ -1,4 +1,8 @@
 .main_map {
+  @media (max-width: 1355px) {
+    height: auto;
+    background: $base-background-color;
+  }
   background: url(./../images/main-map-background.png) 50% 50%;
   height: 954px;
   position: relative;
@@ -6,6 +10,9 @@
   flex-direction: column;
   align-items: center;
   &::before {
+    @media (max-width: 1355px) {
+      display: none;
+    }
     content: "";
     position: absolute;
     top: 0;
@@ -16,6 +23,13 @@
     z-index: 5;
   }
   .question_form {
+    @media (max-width: 1355px) {
+      width: 100%;
+      height: auto;
+      position: static;
+      background-color: $base-background-color;
+      order: 1;
+    }
     position: absolute;
     bottom: 78%;
     z-index: 6;
@@ -152,6 +166,10 @@
     }
   }
   &--description {
+    @media (max-width: 1355px) {
+      order: 3;
+      margin-top: 5%;
+    }
     font-family: "Yeseva One";
     font-style: normal;
     font-weight: normal;
@@ -165,6 +183,9 @@
     width: 456px;
   }
   &--social_icons {
+    @media (max-width: 1355px) {
+      order: 4;
+    }
     margin-top: 2%;
     z-index: 6;
     display: flex;
@@ -173,6 +194,10 @@
   }
 
   &--map {
+    @media (max-width: 1355px) {
+      max-width: 90%;
+        order: 2;
+    }
     z-index: 6;
     margin-top: 3%;
   }

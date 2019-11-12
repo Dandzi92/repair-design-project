@@ -1,4 +1,7 @@
 .main_customers {
+  @media (max-width: 1355px) {
+    display: none;
+  }
   height: 1620px;
   background-color: rgb(255, 255, 255);
   display: flex;
