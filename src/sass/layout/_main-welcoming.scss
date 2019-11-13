@@ -76,6 +76,13 @@
         margin-top: 6%;
         margin-left: 0;
       }
+      @media (max-width: 600px) {
+        width: 90%;
+      }
+      @media (max-width: 570px) {
+        margin-top: 120px;
+        margin-bottom: 15px;
+      }
       margin-top: 27.4%;
       margin-left: 4.4%;
       font-family: "Yeseva One";

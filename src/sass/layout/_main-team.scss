@@ -27,6 +27,9 @@
     margin-top: 10%;
   }
   &--description {
+    @media (max-width: 570px) {
+      width: 90%;
+    }
     font-family: FuturaBookC;
     font-size: 1.25rem;
     line-height: 1.688rem;
@@ -42,12 +45,12 @@
       justify-content: space-evenly;
     }
     display: flex;
-    margin-top: 5%;
+    margin-top: 50px;
   }
 
   .employees_item {
     @media (max-width: 1355px) {
-      margin-bottom: 17%;
+      margin-bottom: 120px;
     }
     display: flex;
     flex-direction: column;

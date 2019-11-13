@@ -42,6 +42,9 @@
     @media (max-width: 1355px) {
       color: $text-white;
     }
+    @media (max-width: 700px) {
+      width: 90%;
+    }
     font-family: "FuturaBookC";
     font-size: 1.25rem;
     line-height: 1.688rem;
@@ -70,10 +73,22 @@
       }
       position: relative;
     }
+    // &--item-first {
+    //   @media (max-width: 1355px) {
+    //    height: 500px;
+    //   }
+    // }
+
     &--item_description {
       @media (max-width: 1355px) {
         top: 43%;
         left: 0;
+        &-first {
+          height: 235px;
+        }
+        &-second, &-third {
+          height: 310px;
+        }
       }
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
       width: 330px;

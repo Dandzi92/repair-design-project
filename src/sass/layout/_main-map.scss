@@ -41,6 +41,10 @@
     align-items: center;
 
     &--customer {
+      @media (max-width: 570px) {
+        flex-direction: column;
+        width: 90%;
+      }
       display: flex;
       width: 520px;
       justify-content: space-between;
@@ -51,7 +55,7 @@
       font-style: normal;
       font-weight: normal;
       font-size: 1.25rem;
-      line-height:  1.75rem;
+      line-height: 1.75rem;
       text-align: center;
       text-transform: uppercase;
       color: #ffffff;
@@ -60,7 +64,7 @@
     &--label {
       font-family: "FuturaBookC";
       font-size: 0.9375rem;
-      line-height:  1.25rem;
+      line-height: 1.25rem;
       color: rgba(255, 255, 255, 0.5);
     }
     &--input {
@@ -73,6 +77,9 @@
       color: #ffffff;
     }
     &--query {
+      @media (max-width: 570px) {
+        width: 90%;
+      }
       display: flex;
       flex-direction: column;
       width: 520px;
@@ -80,12 +87,18 @@
       margin-top: 3%;
     }
     &--name {
+      @media (max-width: 570px) {
+        width: 100%;
+      }
       display: flex;
       flex-direction: column;
       width: 231px;
       height: 50px;
     }
     &--phone {
+      @media (max-width: 570px) {
+        width: 100%;
+      }
       display: flex;
       flex-direction: column;
       width: 231px;
@@ -96,7 +109,7 @@
       label {
         font-family: "FuturaBookC";
         font-size: 1rem;
-        line-height:  1.375rem;
+        line-height: 1.375rem;
         color: #ffffff;
         display: block;
         position: relative;
@@ -157,7 +170,7 @@
         height: 51px;
         font-family: "FuturaDemiC";
         font-size: 0.8125rem;
-        line-height:  1.125rem;
+        line-height: 1.125rem;
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
@@ -168,7 +181,14 @@
   &--description {
     @media (max-width: 1355px) {
       order: 3;
-      margin-top: 5%;
+      width: 90%;
+      margin-top: 41px;
+    }
+
+    @media (max-width: 470px) {
+      order: 3;
+      
+      width: 90%;
     }
     font-family: "Yeseva One";
     font-style: normal;
@@ -187,6 +207,7 @@
       order: 4;
     }
     margin-top: 2%;
+    margin-bottom: 20px;
     z-index: 6;
     display: flex;
     width: 70px;
@@ -196,7 +217,7 @@
   &--map {
     @media (max-width: 1355px) {
       max-width: 90%;
-        order: 2;
+      order: 2;
     }
     z-index: 6;
     margin-top: 3%;

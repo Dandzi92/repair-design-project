@@ -1,6 +1,6 @@
 .main_products {
   @media (max-width: 1355px) {
-    height: 1550px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,9 +11,16 @@
   background-color: $base-background-color;
   .portfolio_projects {
     @media (max-width: 1355px) {
-     flex-direction: column;
-     height: auto;
-     position: relative;
+      flex-direction: column;
+      height: auto;
+      position: relative;
+      margin-bottom: 190px;
+    }
+    @media (max-width: 900px) {
+      align-items: center;
+    }
+    @media (max-width: 570px) {
+      margin-bottom: 150px;
     }
     display: flex;
     height: 750px;
@@ -26,6 +33,7 @@
       height: auto;
       align-items: center;
     }
+   
     margin-top: 176px;
     margin-left: 7%;
     width: 441px;
@@ -43,13 +51,13 @@
     }
     &--title {
       @media (max-width: 1355px) {
-       text-align: center;
-       margin-bottom: 1%;
+        text-align: center;
+        margin-bottom: 1%;
       }
       font-family: "Yeseva One";
       font-style: normal;
       font-weight: normal;
-      font-size:  1.688rem;
+      font-size: 1.688rem;
       line-height: 2.313rem;
       letter-spacing: -0.07em;
       text-transform: uppercase;
@@ -57,7 +65,7 @@
       width: 255px;
       &::after {
         @media (max-width: 1355px) {
-            display: none;
+          display: none;
         }
         content: "";
         display: inline-block;
@@ -71,9 +79,12 @@
     &--story {
       @media (max-width: 1355px) {
         text-align: center;
-    }
+      }
+      @media (max-width: 450px) {
+        width: 90%;
+      }
       font-family: "FuturaBookC";
-      font-size:  1.125rem;
+      font-size: 1.125rem;
       line-height: 1.813rem;
       color: $text-white;
       width: 441px;
@@ -83,8 +94,12 @@
     @media (max-width: 1355px) {
       position: absolute;
       top: 105%;
-    left: 0;
-  }
+      left: 0;
+    }
+    @media (max-width: 700px) {
+      left: 10%;
+    }
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -95,7 +110,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
-        line-height:  1.563rem;
+        line-height: 1.563rem;
         text-transform: uppercase;
         color: $text-gold;
       }
@@ -123,6 +138,9 @@
       margin-left: 0;
       margin-top: 4%;
     }
+    @media (max-width: 700px) {
+      width: 80%;
+    }
     margin-left: 3.4%;
     &--navbar {
       @media (max-width: 1355px) {
@@ -149,7 +167,6 @@
       }
       .second_slide {
         @media (max-width: 1355px) {
-         
           width: 100%;
         }
       }
@@ -180,7 +197,7 @@
 
   .chapter {
     @media (max-width: 1355px) {
-      margin-top: 10%;
+      height: auto;
     }
     display: flex;
     width: 196px;
@@ -199,12 +216,20 @@
   }
   .video {
     @media (max-width: 1355px) {
-     width: 85%;
-     position: static;
-     margin-bottom: 5%;
+      position: static;
+      margin-bottom: 40px;
     }
+    @media (max-width: 900px) {
+      position: static;
+      margin-bottom: 5%;
+      height: 50vw;
+      width: 80%;
+    }
+    margin-top: 20px;
     position: absolute;
-    left: 23%;
+    left: 20%;
     top: 82%;
+    height: 434px;
+    width: 817px;
   }
 }
