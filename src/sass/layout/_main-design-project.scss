@@ -71,24 +71,35 @@
       @media (max-width: 1355px) {
        height: 650px;
       }
+      @media (max-width: 395px) {
+        height: 484px;
+        &-first {
+          height: 420px;
+        }
+       }
       position: relative;
     }
-    // &--item-first {
-    //   @media (max-width: 1355px) {
-    //    height: 500px;
-    //   }
-    // }
+    
 
     &--item_description {
       @media (max-width: 1355px) {
         top: 43%;
         left: 0;
         &-first {
+          @media (max-width: 395px) {
+            height: 177px;
+          }
           height: 235px;
         }
         &-second, &-third {
+          @media (max-width: 395px) {
+            height: 241px;
+          }
           height: 310px;
         }
+      }
+       @media (max-width: 395px) {
+        width: 270px;
       }
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
       width: 330px;
@@ -99,6 +110,13 @@
       z-index: 1;
       background-color: $text-white;
     }
+
+    &--item_view {
+      @media (max-width: 395px) {
+        height:  365px;;
+      }
+    }
+
     &--title {
       margin: 0;
       font-family: "Yeseva One";
@@ -120,6 +138,10 @@
       @media (max-width: 1355px) {
         top: 73%;
         left: 0;
+      }
+      @media (max-width: 395px) {
+        width: 190px;
+        height: 40px;
       }
       width: 228px;
       height: 54px;
