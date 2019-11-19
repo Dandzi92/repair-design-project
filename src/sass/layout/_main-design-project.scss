@@ -14,6 +14,9 @@
   flex-direction: column;
   align-items: center;
   &--chapter {
+    @media (max-width: 375px) {
+      margin-top: 150px;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +48,9 @@
     @media (max-width: 700px) {
       width: 90%;
     }
+    @media (max-width: 375px) {
+      margin-top: 20px;
+    }
     font-family: "FuturaBookC";
     font-size: 1.25rem;
     line-height: 1.688rem;
@@ -63,6 +69,9 @@
       height: auto;
       flex-wrap: wrap;
     }
+    @media (max-width: 375px) {
+      margin-top: 40px;
+    }
     display: flex;
     width: 1236px;
     margin-top: 3%;
@@ -77,6 +86,7 @@
           height: 420px;
         }
        }
+       margin-bottom: 60px;
       position: relative;
     }
     
@@ -88,6 +98,7 @@
         &-first {
           @media (max-width: 395px) {
             height: 177px;
+            top: 55%;
           }
           height: 235px;
         }
@@ -161,18 +172,34 @@
       top: 115%;
       z-index: 2;
       left: 8%;
+
+      &-mini {
+        @media (max-width: 395px) {
+          top: 92%;
+        }
+       
+      }
+
       &-not_mini {
         top: 133%;
         @media (max-width: 1355px) {
           top: 86%;
         }
+        @media (max-width: 395px) {
+          top: 88%;
+        }
+
       }
       &-full {
         top: 163%;
         @media (max-width: 1355px) {
           top: 86%;
         }
+        @media (max-width: 395px) {
+          top: 88%;
+        }
       }
     }
+
   }
 }

@@ -30,6 +30,9 @@
     @media (max-width: 570px) {
       width: 90%;
     }
+    @media (max-width: 375px) {
+     margin-top: 20px;
+    }
     font-family: FuturaBookC;
     font-size: 1.25rem;
     line-height: 1.688rem;
@@ -44,13 +47,18 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
+
+    @media (max-width: 375px) {
+      margin-top: 80px;
+     }
+
     display: flex;
     margin-top: 50px;
   }
 
   .employees_item {
     @media (max-width: 1355px) {
-      margin-bottom: 120px;
+      margin-bottom: 150px;
     }
     display: flex;
     flex-direction: column;
@@ -61,6 +69,10 @@
 
     // }
     &--icon {
+      @media (max-width: 375px) {
+        left: -4%;
+        bottom: 92%;
+      }
       position: absolute;
       z-index: 2;
       left: 2%;

@@ -44,6 +44,7 @@
       @media (max-width: 570px) {
         flex-direction: column;
         width: 90%;
+        margin-top: 0;
       }
       display: flex;
       width: 520px;
@@ -78,6 +79,7 @@
     }
     &--query {
       @media (max-width: 570px) {
+        margin-top: 40px;
         width: 90%;
       }
       display: flex;
@@ -88,6 +90,7 @@
     }
     &--name {
       @media (max-width: 570px) {
+        margin-top: 40px;
         width: 100%;
       }
       display: flex;
@@ -97,6 +100,7 @@
     }
     &--phone {
       @media (max-width: 570px) {
+        margin-top: 40px;
         width: 100%;
       }
       display: flex;
@@ -105,6 +109,11 @@
       height: 50px;
     }
     &--checkbox {
+      @media (max-width: 375px) {
+        align-self: flex-start;
+        margin-left: 13px;
+        margin-top: 10px;
+      }
       margin-top: 5%;
       label {
         font-family: "FuturaBookC";
@@ -160,10 +169,17 @@
       }
     }
     &--submit {
+      @media (max-width: 375px) {
+        margin-top: 70px;
+        width: 340px;
+      }
       margin-top: 3%;
       display: flex;
       justify-content: flex-end;
       input {
+        @media (max-width: 375px) {
+          width: 340px;
+        }
         background: #e3b873;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
         width: 200px;
@@ -206,6 +222,10 @@
     @media (max-width: 1355px) {
       order: 4;
     }
+    @media (max-width: 375px) {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
     margin-top: 2%;
     margin-bottom: 20px;
     z-index: 6;
@@ -219,6 +239,13 @@
       max-width: 90%;
       order: 2;
     }
+
+    @media (max-width: 375px) {
+      margin-top: 40px;
+      width: 340px;
+      height: 255px;
+    }
+
     z-index: 6;
     margin-top: 3%;
   }

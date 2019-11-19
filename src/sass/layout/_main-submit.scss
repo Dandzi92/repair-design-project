@@ -11,7 +11,7 @@
 
   &--decorator {
     @media (max-width: 1355px) {
-      margin-top: 5%;
+      margin-top: 25px;
     }
     margin-top: 22%;
   }
@@ -33,7 +33,7 @@
   }
   .form {
     @media (max-width: 1355px) {
-      margin-top: 60px;
+      margin-top: 40px;
      
     position: relative;
     width: 85%;
@@ -89,7 +89,7 @@
     &--phone {
       @media (max-width: 1355px) {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 60px;
       }
       display: flex;
       flex-direction: column;
@@ -124,7 +124,14 @@
         position: absolute;
         top: 110%;
       }
+      @media (max-width: 375px) {
+        top: 140%;
+        width: 340px;
+      }
       input {
+        @media (max-width: 375px) {
+          width: 340px;
+        }
         width: 200px;
         height: 51px;
         background: #e3b873;
@@ -140,6 +147,10 @@
       }
     }
     &--checkbox {
+      @media (max-width: 375px) {
+        margin-top: 25px;
+        align-self: flex-start;
+      }
       align-self: center;
       margin-top: 5%;
       label {
