@@ -126,7 +126,12 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 0;
+        &-desktop {
+          display: none;
+        }
       }
+
+
 
       @media (max-width: 375px) {
         margin-top: 54px;
