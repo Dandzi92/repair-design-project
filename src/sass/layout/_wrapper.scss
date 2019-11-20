@@ -9,8 +9,15 @@ html {
 }
 
 .wrapper {
+  
   max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+body {
+  @media (min-width: 1440px) {
+    background-color: $base-background-color;
+  }
 }
