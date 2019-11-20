@@ -198,6 +198,9 @@
         }
       }
       .slides_toggler_big {
+        @media (max-width: 1385px) {
+          left: 695px;
+        }
         @media (max-width: 1355px) {
           display: none;
         }

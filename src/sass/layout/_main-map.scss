@@ -218,6 +218,10 @@
     z-index: 6;
     margin-top: 19%;
     width: 456px;
+    span {
+      color: rgb(227, 184, 115);
+      text-decoration: none;
+    }
   }
   &--social_icons {
     @media (max-width: 1355px) {
