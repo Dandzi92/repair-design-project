@@ -31,7 +31,7 @@
     @media (max-width: 1355px) {
       color: $text-white;
     }
-    font-family: "Yeseva One";
+    font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
     font-size: 1.25rem;
@@ -51,7 +51,7 @@
     @media (max-width: 375px) {
       margin-top: 20px;
     }
-    font-family: "FuturaBookC";
+    font-family: $futuraBookC;
     font-size: 1.25rem;
     line-height: 1.688rem;
     text-align: center;
@@ -131,7 +131,7 @@
 
     &--title {
       margin: 0;
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 1.125rem;
@@ -140,7 +140,7 @@
       padding-left: 8%;
     }
     &--services_list {
-      font-family: "FuturaBookC";
+      font-family: $futuraBookC;
       font-size: 0.9375rem;
       line-height: 1.563rem;
       color: #959595;
@@ -159,7 +159,7 @@
       height: 54px;
       background: #e3b873;
       box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-      font-family: Yeseva One;
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 1.125rem;

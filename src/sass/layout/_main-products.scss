@@ -61,7 +61,7 @@
         text-align: center;
         margin-bottom: 1%;
       }
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 1.688rem;
@@ -95,7 +95,7 @@
         width: 293px;
         margin-bottom: 0;
       }
-      font-family: "FuturaBookC";
+      font-family: $futuraBookC;
       font-size: 1.125rem;
       line-height: 1.813rem;
       color: $text-white;
@@ -124,7 +124,7 @@
     &--item {
       flex-basis: 50%;
       span {
-        font-family: "Yeseva One";
+        font-family: $yeseva-one;
         font-style: normal;
         font-weight: normal;
         font-size: 1.125rem;
@@ -133,7 +133,7 @@
         color: $text-gold;
       }
       p {
-        font-family: "FuturaBookC";
+        font-family: $futuraBookC;
         font-size: 0.9375rem;
         line-height: 1.25rem;
         color: $text-white;
@@ -234,7 +234,7 @@
     }
 
     &--link {
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 0.875rem;
@@ -264,7 +264,7 @@
     margin: 0 auto;
 
     &--title {
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-size: 1.25rem;
       line-height: 1.75rem;
       color: $text-white;

@@ -111,7 +111,7 @@
       width: 210px;
     text-align: center;
     }
-    font-family: "Yeseva One";
+    font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
     font-size: 1.688rem;
@@ -125,7 +125,7 @@
     @media (max-width: 1355px) {
       display: none;
     }
-    font-family: "Proxima Nova";
+    font-family: $proxima-nova;
     font-size: 1.25rem;
     line-height: 2.125rem;
     color: #fff;

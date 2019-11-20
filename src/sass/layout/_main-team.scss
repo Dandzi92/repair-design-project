@@ -14,7 +14,7 @@
     height: 70px;
   }
   &--title {
-    font-family: "Yeseva One";
+    font-family: $yeseva-one;
     font-style: normal;
     font-weight: normal;
     font-size: 1.25rem;
@@ -33,7 +33,7 @@
     @media (max-width: 375px) {
      margin-top: 20px;
     }
-    font-family: FuturaBookC;
+    font-family: $futuraBookC;
     font-size: 1.25rem;
     line-height: 1.688rem;
     text-align: center;
@@ -82,7 +82,7 @@
       width: 237px;
       height: 44px;
       background: rgb(227, 184, 115);
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 0.8125rem;
@@ -107,7 +107,7 @@
     top: 79%;
     padding-top: 5%;
     &--name {
-      font-family: "Yeseva One";
+      font-family: $yeseva-one;
       font-style: normal;
       font-weight: normal;
       font-size: 1.125rem;
@@ -116,7 +116,7 @@
       color: rgb(24, 24, 24);
     }
     &--profession {
-      font-family: "FuturaBookC";
+      font-family: $futuraBookC;
       font-size: 1.125rem;
       line-height: 1.625rem;
       text-align: center;
@@ -129,7 +129,7 @@
       display: none;
     }
     margin-top: 9%;
-    font-family: FuturaBookC;
+    font-family: $futuraBookC;
     font-size: 1.25rem;
     line-height: 2.125rem;
     text-align: center;
