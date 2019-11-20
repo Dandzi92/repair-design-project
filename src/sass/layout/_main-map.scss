@@ -191,6 +191,7 @@
         text-transform: uppercase;
         color: #ffffff;
         border: none;
+        cursor: pointer;
       }
     }
   }
@@ -232,6 +233,11 @@
     display: flex;
     width: 70px;
     justify-content: space-between;
+
+    .instagram_social, .envelope_social {
+      cursor: pointer;
+    }
+
   }
 
   &--map {

@@ -140,7 +140,7 @@
                     </div>
                     <div class="form--phone">
                         <label for="phone1">Phone</label>
-                        <input type="text" name="phone1" id="phone1" required  value="Your phone number:" />
+                        <input type="tel" name="phone1" id="phone1" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="Your phone number:" />
                     </div>
                     <div class="form--submit">
                         <input type="submit" name="submit" value="submit" />
@@ -148,7 +148,7 @@
                 </div>
                 <div class="form--checkbox">
                     <label for="agree">I agree to the processing of personal data
-                        <input type="checkbox" name="agree" id="agree" checked="checked" />
+                        <input type="checkbox" name="agree" id="agree" checked="checked" required/>
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -254,8 +254,8 @@
                         </div>
                         <div class="consumer_form--phone">
                             <label class="consumer_form--label" for="phone2">Phone</label>
-                            <input class="consumer_form--input" type="text" name="phone2" id="phone2" required
-                                value="Your phone number:" />
+                            <input class="consumer_form--input" type="tel" name="phone2" id="phone2" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  value="Your phone number:" />
                         </div>
                         <div class="consumer_form--email">
                             <label class="consumer_form--label" for="email">Email</label>
@@ -264,7 +264,7 @@
                         </div>
                         <div class="consumer_form--checkbox">
                             <label for="accept2">I agree to the processing of personal data
-                                <input type="checkbox" name="accept2" id="accept2" checked="checked" />
+                                <input type="checkbox" name="accept2" id="accept2" checked="checked" required/>
                                 <span class="consumer_form--checkmark"></span>
                             </label>
                         </div>
@@ -580,8 +580,8 @@
                     </div>
                     <div class="question_form--phone">
                         <label class="question_form--label" for="phone3">Phone</label>
-                        <input class="question_form--input" type="text" name="phone3" id="phone3" required
-                            value="Your phone number:" />
+                        <input class="question_form--input" type="tel" name="phone3" id="phone3" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"   value="Your phone number:" />
                     </div>
                 </div>
                 <div class="question_form--query">
@@ -591,7 +591,7 @@
                 </div>
                 <div class="question_form--checkbox">
                     <label for="accept3">I agree to the processing of personal data
-                        <input type="checkbox" name="accept3" id="accept3" checked="checked" />
+                        <input type="checkbox" name="accept3" id="accept3" checked="checked" required/>
                         <span class="question_form--checkmark"></span>
                     </label>
                 </div>
@@ -602,7 +602,7 @@
             <div class="main_map--description">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768
                 32 29</div>
             <div class="main_map--social_icons">
-                <img src="./images/mail-icon-map.svg" alt="mail envelope"><img src="./images/instagram-icon-map.svg" alt="instagram">
+                <img class="envelope_social" src="./images/mail-icon-map.svg" alt="mail envelope"><img class="instagram_social" src="./images/instagram-icon-map.svg" alt="instagram">
             </div>
             <img class="main_map--map" src="./images/map-picture.png" alt="map">
         </div>
