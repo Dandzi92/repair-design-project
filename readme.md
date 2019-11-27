@@ -1,6 +1,6 @@
 # Instruction about how to launch this project
 
-* Install all packages:
+* Install all necessary packages:
 `$ npm install`
 * Run webpack
 `$ npm run build`
